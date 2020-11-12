@@ -1,4 +1,4 @@
-package pronskiy.elephpant;
+package robertpranjic.swetz;
 
 import com.intellij.openapi.ui.GraphicsConfig;
 import com.intellij.ui.Gray;
@@ -17,9 +17,9 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.geom.*;
 
-import static pronskiy.elephpant.ElephpantIcons.ICON;
+import static robertpranjic.swetz.SwetzIcons.ICON;
 
-public class ElephpantProgressBarUi extends BasicProgressBarUI {
+public class SwetzProgressBarUi extends BasicProgressBarUI {
     private static final float[] FRACTIONS = {0.5f, 1f};
     private static final Color ELEPHPANT_COLOR_START = new JBColor(new Color(136, 146, 191), new Color(136, 146, 191));
     private static final Color ELEPHPANT_COLOR_END = new JBColor(new Color(136, 146, 191, 255), new Color(136, 146, 191));
@@ -30,7 +30,7 @@ public class ElephpantProgressBarUi extends BasicProgressBarUI {
     @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
     public static ComponentUI createUI(JComponent c) {
         c.setBorder(JBUI.Borders.empty().asUIResource());
-        return new ElephpantProgressBarUi();
+        return new SwetzProgressBarUi();
     }
 
     @Override
@@ -123,7 +123,7 @@ public class ElephpantProgressBarUi extends BasicProgressBarUI {
             g2d.fill(area);
         }
 
-        Icon icon = velocity > 0 ? (ElephpantIcons.ICON) : (ElephpantIcons.ICON_REVERSED) ;
+        Icon icon = velocity > 0 ? (SwetzIcons.ICON) : (SwetzIcons.ICON_REVERSED) ;
 
         g2d.draw(new RoundRectangle2D.Float(1f, 1f, w - 3f, h - 3f, JBUIScale.scale(8f), JBUIScale.scale(8f)));
         icon.paintIcon(progressBar, g2d, offset2 - JBUI.scale(10), -JBUI.scale(1));
