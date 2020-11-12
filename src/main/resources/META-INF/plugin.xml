@@ -1,0 +1,16 @@
+<idea-plugin require-restart="true">
+    <id>robertpranjic.swetz</id>
+    <name>Swetz Progress Bar</name>
+    <vendor email="r.pranjic@exporo.com">Robert Pranjic</vendor>
+
+    <description><![CDATA[
+    Swetz as a loader
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <idea-version since-build="201"/>
+
+    <applicationListeners>
+        <listener class="robertpranjic.swetz.ElephpantApplicationComponent" topic="com.intellij.ide.ui.LafManagerListener"/>
+    </applicationListeners>
+</idea-plugin>
