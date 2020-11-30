@@ -21,9 +21,9 @@ import static robertpranjic.swetz.SwetzIcons.ICON;
 
 public class SwetzProgressBarUi extends BasicProgressBarUI {
     private static final float[] FRACTIONS = {0.5f, 1f};
-    private static final Color ELEPHPANT_COLOR_START = new JBColor(new Color(136, 146, 191), new Color(136, 146, 191));
-    private static final Color ELEPHPANT_COLOR_END = new JBColor(new Color(136, 146, 191, 255), new Color(136, 146, 191));
-    private static final Color[] COLORS = {ELEPHPANT_COLOR_START, ELEPHPANT_COLOR_END};
+    private static final Color SWETZ_COLOR_START = new JBColor(new Color(136, 146, 191), new Color(136, 146, 191));
+    private static final Color SWETZ_COLOR_END = new JBColor(new Color(136, 146, 191, 255), new Color(136, 146, 191));
+    private static final Color[] COLORS = {SWETZ_COLOR_START, SWETZ_COLOR_END};
     private static final JBColor SHADES_OF_GREY = new JBColor(Gray._240.withAlpha(50), Gray._128.withAlpha(50));
     private static final JBColor SHADES_OF_GREY2 = new JBColor(Gray._165.withAlpha(50), Gray._88.withAlpha(50));
 

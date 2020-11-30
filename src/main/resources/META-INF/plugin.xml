@@ -11,6 +11,6 @@
     <idea-version since-build="201"/>
 
     <applicationListeners>
-        <listener class="robertpranjic.swetz.ElephpantApplicationComponent" topic="com.intellij.ide.ui.LafManagerListener"/>
+        <listener class="robertpranjic.swetz.SwetzApplicationComponent" topic="com.intellij.ide.ui.LafManagerListener"/>
     </applicationListeners>
 </idea-plugin>
